@@ -1,0 +1,8 @@
+asm
+  push offset DefaultExceptionHandler
+  push dword ptr fs:[0]
+  mov dword ptr fs:[0],esp
+  mov pSEH.safe_eip,offset _seh
+  mov pSEH.return_ebp,ebp
+  mov pSEH.return_esp,esp
+end;

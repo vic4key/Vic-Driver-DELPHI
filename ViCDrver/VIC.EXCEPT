@@ -1,0 +1,5 @@
+asm
+  _seh:
+  pop dword ptr fs:[0]
+  add esp,4
+end;
